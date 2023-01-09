@@ -78,7 +78,12 @@ namespace Pokedex.Tests.Services
             result.Should().Be(pokemon.Id);
         }
 
-        // DeletePokemon - Deve lançar uma notificação quando o pokémon não for encontrado no banco.
+        // Deve lançar notificações e impedir o update quando o pokemon informado não for válido.
+        // Deve lançar uma notificação e impedir o update quando o pokémon não for encontrado no banco.
+        // Deve lançar uma notificação e impedir o update quando já existir um cadastro com o mesmo nome do pokémon informado.
+        // Deve atualizar o pokémon no banco quando existir um cadastro prévio do mesmo.
+
+        // DeletePokemon - Deve lançar uma notificação e impedir a remoção quando o pokémon não for encontrado no banco.
         // DeletePokemon - Deve remover o pokémon do banco quando existir um cadastro prévio do mesmo.
     }
 }
