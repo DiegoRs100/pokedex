@@ -1,0 +1,15 @@
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\bin\Debug\net7.0\Pokedex.Infra.deps.json
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\bin\Debug\net7.0\Pokedex.Infra.dll
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\bin\Debug\net7.0\Pokedex.Infra.pdb
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\obj\Debug\net7.0\Pokedex.Infra.csproj.AssemblyReference.cache
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\obj\Debug\net7.0\Pokedex.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\obj\Debug\net7.0\Pokedex.Infra.AssemblyInfoInputs.cache
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\obj\Debug\net7.0\Pokedex.Infra.AssemblyInfo.cs
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\obj\Debug\net7.0\Pokedex.Infra.csproj.CoreCompileInputs.cache
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\obj\Debug\net7.0\Pokedex.Infra.dll
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\obj\Debug\net7.0\refint\Pokedex.Infra.dll
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\obj\Debug\net7.0\Pokedex.Infra.pdb
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\obj\Debug\net7.0\ref\Pokedex.Infra.dll
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\bin\Debug\net7.0\Pokedex.Business.dll
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\bin\Debug\net7.0\Pokedex.Business.pdb
+C:\Projects\pokedex\Pokedex\src\Pokedex.Infra\obj\Debug\net7.0\Pokedex.Infra.csproj.CopyComplete

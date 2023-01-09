@@ -1,0 +1,12 @@
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\bin\Debug\net7.0\Pokedex.Business.deps.json
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\bin\Debug\net7.0\Pokedex.Business.dll
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\bin\Debug\net7.0\Pokedex.Business.pdb
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\obj\Debug\net7.0\Pokedex.Business.csproj.AssemblyReference.cache
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\obj\Debug\net7.0\Pokedex.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\obj\Debug\net7.0\Pokedex.Business.AssemblyInfoInputs.cache
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\obj\Debug\net7.0\Pokedex.Business.AssemblyInfo.cs
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\obj\Debug\net7.0\Pokedex.Business.csproj.CoreCompileInputs.cache
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\obj\Debug\net7.0\Pokedex.Business.dll
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\obj\Debug\net7.0\refint\Pokedex.Business.dll
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\obj\Debug\net7.0\Pokedex.Business.pdb
+C:\Projects\pokedex\Pokedex\src\Pokedex.Business\obj\Debug\net7.0\ref\Pokedex.Business.dll
