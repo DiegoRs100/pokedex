@@ -15,6 +15,7 @@ namespace Pokedex.Api.Configurations
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
             services.AddScoped<IPokemonRepository, PokemonRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             return services;
         }
     }
