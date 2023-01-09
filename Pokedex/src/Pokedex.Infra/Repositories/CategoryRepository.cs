@@ -8,7 +8,7 @@ namespace Pokedex.Infra.Repositories
 {
     public class CategoryRepository : RepositoryBase, ICategoryRepository
     {
-        protected CategoryRepository(EFDbContext eFDbContext) : base(eFDbContext)
+        public CategoryRepository(EFDbContext eFDbContext) : base(eFDbContext)
         { }
 
         public Task<IEnumerable<Category>> GetAll()
