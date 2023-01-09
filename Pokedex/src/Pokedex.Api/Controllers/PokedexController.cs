@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Pokedex.Api.Models;
 using Pokedex.Business.Entities;
 using Pokedex.Business.Queries;
+using Pokedex.Business.Repositories;
 using Pokedex.Business.Services;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -12,12 +13,16 @@ namespace Pokedex.Api.Controllers
     public class PokedexController : ControllerBase
     {
         private readonly IPokedexService _pokedexService;
+        private readonly IPokemonRepository _pokemonRepository;
         private readonly IMapper _mapper;
 
-        public PokedexController(IPokedexService pokedexService, IMapper mapper)
+        public PokedexController(IPokedexService pokedexService, 
+                                 IMapper mapper,
+                                 IPokemonRepository pokemonRepository)
         {
             _mapper = mapper;
             _pokedexService = pokedexService;
+            _pokemonRepository = pokemonRepository;
         }
 
         [HttpPost]
@@ -57,7 +62,7 @@ namespace Pokedex.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetPokemonById(Guid pokemonId)
         {
-            var pokemon = await _pokedexService.GetPokemonById(pokemonId);
+            var pokemon = await _pokemonRepository.GetById(pokemonId);
 
             if (pokemon == null)
                 return NotFound();
@@ -67,11 +72,11 @@ namespace Pokedex.Api.Controllers
         }
 
         [HttpGet("find")]
-        [SwaggerOperation("Listar pokpemons.")]
+        [SwaggerOperation("Listar pokémons.")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> FindPokemons(FindPokemonQuery query)
         {
-            var pokemons = await _pokedexService.FindPokemons(query);
+            var pokemons = await _pokemonRepository.Find(query);
 
             HttpContext.Response.Headers.Add("X-Total-Count", pokemons.Count().ToString());
 
