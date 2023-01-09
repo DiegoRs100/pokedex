@@ -10,13 +10,23 @@ namespace Pokedex.Business.Entities
         public string Name { get; private set; }
         public Guid CategoryId { get; private set; }
         public Gender Gender { get; private set; }
-        public List<PokemonAbility> Abilities { get; private set; } = new();
 
-        public Pokemon(string name, Guid categoryId, Gender gender)
+        public int Hp { get; private set; }
+        public int Attack { get; private set; }
+        public int Defense { get; private set; }
+        public int Speed { get; private set; }
+
+        public Category Category { get; private set; } = default!;
+
+        public Pokemon(string name, Guid categoryId, Gender gender, int hp, int attack, int defense, int speed)
         {
             Name = name;
             CategoryId = categoryId;
             Gender = gender;
+            Hp = hp;
+            Attack = attack;
+            Defense = defense;
+            Speed = speed;
         }
 
         public override ValidationResult Validate()

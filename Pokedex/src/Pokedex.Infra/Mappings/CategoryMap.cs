@@ -4,15 +4,14 @@ using Pokedex.Business.Entities;
 
 namespace Pokedex.Infra.Mappings
 {
-    public class PokemonAbilityMap : IEntityTypeConfiguration<PokemonAbility>
+    public class CategoryMap : IEntityTypeConfiguration<Category>
     {
-        public void Configure(EntityTypeBuilder<PokemonAbility> builder)
+        public void Configure(EntityTypeBuilder<Category> builder)
         {
-            builder.ToTable("POKEMON_ABILITIES");
+            builder.ToTable("CATEGORY");
             builder.HasKey(pa => pa.Id);
 
-            builder.Property(pa => pa.Id).HasColumnName("PokemonAbilityId");
-            builder.Property(pa => pa.PokemonId).HasColumnName("PokemonId");
+            builder.Property(pa => pa.Id).HasColumnName("CategoryId");
 
             builder.Property(pa => pa.Name)
                 .HasColumnName("Name")

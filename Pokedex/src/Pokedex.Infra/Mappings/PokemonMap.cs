@@ -20,9 +20,9 @@ namespace Pokedex.Infra.Mappings
                 .IsUnicode()
                 .HasMaxLength(50);
 
-            builder.HasMany(p => p.Abilities)
-                .WithOne()
-                .HasForeignKey(p => p.PokemonId);
+            builder.HasOne(p => p.Category)
+                .WithMany()
+                .HasForeignKey(p => p.CategoryId);
         }
     }
 }

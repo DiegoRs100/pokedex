@@ -9,7 +9,7 @@ namespace Pokedex.Api.Configurations
         public AutoMapperConfig()
         {
             CreateMap<PokemonModel, Pokemon>().ReverseMap();
-            CreateMap<PokemonAbilityModel, PokemonAbility>().ReverseMap();
+            CreateMap<CategoryModel, Category>().ReverseMap();
         }
     }
 }

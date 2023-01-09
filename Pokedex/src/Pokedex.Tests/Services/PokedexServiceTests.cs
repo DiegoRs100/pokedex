@@ -28,7 +28,7 @@ namespace Pokedex.Tests.Services
         public async Task AddPokemon_WhenPokemonInvalid()
         {
             // Arrange
-            var pokemon = new Pokemon(string.Empty, Guid.Empty, Gender.All);
+            var pokemon = new Pokemon(string.Empty, Guid.Empty, Gender.All, 1, 1, 1, 1);
             var service = new PokedexService(_pokemonRepository.Object, _notifier.Object);
 
             // Act
@@ -45,11 +45,11 @@ namespace Pokedex.Tests.Services
         public async Task AddPokemon_WhenPokemonDuplicated()
         {
             // Arrange
-            var pokemon = new Pokemon(Guid.NewGuid().ToString(), Guid.NewGuid(), _faker.Random.Enum<Gender>());
+            var pokemon = new Pokemon(Guid.NewGuid().ToString(), Guid.NewGuid(), _faker.Random.Enum<Gender>(), 1, 1, 1, 1);
             var service = new PokedexService(_pokemonRepository.Object, _notifier.Object);
 
             _pokemonRepository.Setup(pr => pr.GetByName(It.IsAny<string>()))
-                .ReturnsAsync(new Pokemon(string.Empty, Guid.Empty, Gender.All));
+                .ReturnsAsync(new Pokemon(string.Empty, Guid.Empty, Gender.All, 1, 1, 1, 1));
 
             // Act
             var result = await service.AddPokemon(pokemon);
@@ -65,7 +65,7 @@ namespace Pokedex.Tests.Services
         public async Task AddPokemon_WhenSuccess()
         {
             // Arrange
-            var pokemon = new Pokemon(Guid.NewGuid().ToString(), Guid.NewGuid(), _faker.Random.Enum<Gender>());
+            var pokemon = new Pokemon(Guid.NewGuid().ToString(), Guid.NewGuid(), _faker.Random.Enum<Gender>(), 1, 1, 1, 1);
             var service = new PokedexService(_pokemonRepository.Object, _notifier.Object);
 
             // Act
