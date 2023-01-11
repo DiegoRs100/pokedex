@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2fPI+SfHtTohLQI/K+ny2kdshN5m1R0g6RL35OLjm27HW3prCezUtmw/JjF4q1gvfX+FKW3YIqu9t24QHjUSZA==",
+  "dgSpecHash": "xE0+ZzO8WrMo4rCI7zIemxsOAMDN40Z6KAe0FhD2zt18ArSPuQtc14nc2vxA4/CjybO1OOi21YbWJxHATTQBQA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\pokedex\\Pokedex\\src\\Pokedex.Api\\Pokedex.Api.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\diego.silva\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\diego.silva\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

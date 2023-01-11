@@ -8,14 +8,17 @@ namespace Pokedex.Api.Configurations
         public static IServiceCollection AddDbContexts(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionName = configuration["SqlServer:PokedexDb"];
+            var connectionString = configuration.GetConnectionString(connectionName!);
 
             services.AddDbContext<EFDbContext>(options =>
             {
-                options.UseSqlServer(configuration.GetConnectionString(connectionName!), options =>
+                options.UseSqlServer(connectionString!, options =>
                 {
                     options.EnableRetryOnFailure(4, TimeSpan.FromSeconds(20), null);
                 });
             });
+
+            services.AddScoped(_ => new DapperDbContext(connectionString!));
 
             return services;
         }

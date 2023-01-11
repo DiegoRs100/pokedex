@@ -9,6 +9,8 @@ namespace Pokedex.Api.Configurations
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             services.AddScoped<IPokedexService, PokedexService>();
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
+
             return services;
         }
 
@@ -16,6 +18,8 @@ namespace Pokedex.Api.Configurations
         {
             services.AddScoped<IPokemonRepository, PokemonRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+
             return services;
         }
     }

@@ -6,6 +6,7 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace Pokedex.Api.Controllers
 {
+    [Route("categories")]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryRepository _categoryRepository;
