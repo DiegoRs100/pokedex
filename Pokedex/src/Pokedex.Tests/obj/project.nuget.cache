@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "qIiCLwftsApPxtUpsJi5MpNDluNIlBHaeUU6o3gQSdMey/e+Eec+GO8yv/ektex+ThKaFQCbpLmKcNhWKd7z5w==",
+  "dgSpecHash": "5I62R1yJ9C++8We5XzeVbBa3pWcj3PllAL3icDlP0BJAmQWGz35lg4NarP7I3KzAc7CbhU9pu1BdZaFEm5UzWQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\pokedex\\Pokedex\\src\\Pokedex.Tests\\Pokedex.Tests.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\diego.silva\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
@@ -31,7 +30,7 @@
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",
-    "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.1.0\\microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.2.0\\microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512",

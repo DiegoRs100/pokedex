@@ -17,7 +17,7 @@ namespace Pokedex.Api.Controllers
 
         [HttpPost("login")]
         [SwaggerOperation("Realizar login.")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetAll(Login login)
         {
             var token = await _authenticationService.Login(login);

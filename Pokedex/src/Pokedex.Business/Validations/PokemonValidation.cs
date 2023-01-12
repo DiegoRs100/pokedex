@@ -17,19 +17,19 @@ namespace Pokedex.Business.Validations
 
             RuleFor(p => p.Hp)
                 .GreaterThan(0)
-                .WithMessage("O HP não pode ser menor ou igual a zero.");
+                .WithMessage("O HP deve ser maior que zero.");
 
             RuleFor(p => p.Attack)
                 .GreaterThan(0)
-                .WithMessage("O ataque não pode ser menor ou igual a zero.");
+                .WithMessage("O ataque deve ser maior que zero.");
 
             RuleFor(p => p.Defense)
                 .GreaterThan(0)
-                .WithMessage("A defesa não pode ser menor ou igual a zero.");
+                .WithMessage("A defesa deve ser maior que zero.");
 
             RuleFor(p => p.Speed)
                 .GreaterThan(0)
-                .WithMessage("A velocidade não pode ser menor ou igual a zero.");
+                .WithMessage("A velocidade deve ser maior que zero.");
         }
     }
 }

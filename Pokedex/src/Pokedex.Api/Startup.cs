@@ -22,7 +22,7 @@ namespace Pokedex.Api
                 options.Filters.Add<ViewModelFilter>());
 
             _services.AddEndpointsApiExplorer();
-            _services.AddSwaggerGen();
+            _services.AddSwaggerGen(options => options.EnableAnnotations());
             _services.AddSmartNotification();
             _services.AddServices();
             _services.AddRepositories();

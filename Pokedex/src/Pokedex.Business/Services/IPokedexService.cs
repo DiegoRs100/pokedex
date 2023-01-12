@@ -1,6 +1,4 @@
-﻿using Pokedex.Business.Core.Interfaces;
-using Pokedex.Business.Entities;
-using Pokedex.Business.Queries;
+﻿using Pokedex.Business.Entities;
 
 namespace Pokedex.Business.Services
 {

@@ -58,7 +58,7 @@ namespace Pokedex.Api.Controllers
 
         [HttpGet("{pokemonId:guid}")]
         [SwaggerOperation("Obter pokémon por Id.")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(PokemonModel), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetPokemonById(Guid pokemonId)
         {
@@ -73,7 +73,7 @@ namespace Pokedex.Api.Controllers
 
         [HttpGet("find")]
         [SwaggerOperation("Listar pokémons.")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IEnumerable<PokemonModel>), StatusCodes.Status200OK)]
         public async Task<IActionResult> FindPokemons(FindPokemonQuery query)
         {
             var pokemons = await _pokemonRepository.Find(query);

@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "1StnHUPhMi9OdU1ULBoqldqcKY4KbNx/1pPVooQ4SyVCU5uvhOYMF9mP0Uf/Yhs5FaoBcvuPslw/40HwMVTAGA==",
+  "dgSpecHash": "B6/0xX1gvTLAye8KPZ3ToQhJRdPfJkE3bZ8CvoYTUP5k/S9NJugOrfJpWhboLO/oQhtsg/V7aE7IJLh1r0JNoQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\pokedex\\Pokedex\\src\\Pokedex.Business\\Pokedex.Business.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\diego.silva\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
@@ -26,7 +25,7 @@
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.aspnetcore.routing\\2.2.0\\microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
-    "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.1.0\\microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\diego.silva\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.2.0\\microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512",
