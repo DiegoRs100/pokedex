@@ -17,6 +17,9 @@ namespace Pokedex.Infra.Mappings
                 .HasColumnName("Name")
                 .IsUnicode()
                 .HasMaxLength(50);
+
+            builder.Property(p => p.CreatedAt).HasColumnName("CreatedAt");
+            builder.Property(p => p.UpdatedAt).HasColumnName("UpdatedAt");
         }
     }
 }

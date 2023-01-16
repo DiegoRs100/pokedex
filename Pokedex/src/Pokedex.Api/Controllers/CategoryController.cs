@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pokedex.Api.Models;
 using Pokedex.Business.Repositories;
@@ -6,6 +7,7 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace Pokedex.Api.Controllers
 {
+    [Authorize]
     [Route("categories")]
     public class CategoryController : ControllerBase
     {

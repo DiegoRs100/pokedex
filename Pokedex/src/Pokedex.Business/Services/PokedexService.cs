@@ -1,6 +1,5 @@
 ﻿using Pokedex.Business.Core.Notifications;
 using Pokedex.Business.Entities;
-using Pokedex.Business.Queries;
 using Pokedex.Business.Repositories;
 
 namespace Pokedex.Business.Services
@@ -83,16 +82,6 @@ namespace Pokedex.Business.Services
             
             _pokemonRepository.Delete(pokemonId);
             await _pokemonRepository.SaveChanges();
-        }
-
-        public Task<Pokemon> GetPokemonById(Guid pokemonId)
-        {
-            return _pokemonRepository.GetById(pokemonId);
-        }
-
-        public async Task<IEnumerable<Pokemon>> FindPokemons(FindPokemonQuery query)
-        {
-            return await _pokemonRepository.Find(query);
         }
     }
 }
