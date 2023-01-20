@@ -30,12 +30,14 @@ namespace Pokedex.Infra.Repositories
 
         public Task<Pokemon> GetById(Guid pokemonId)
         {
-            return EFDbContext.Pokemons.FirstAsync(p => p.Id == pokemonId);
+            return EFDbContext.Pokemons
+                .Include(p => p.Category)
+                .FirstAsync(p => p.Id == pokemonId);
         }
 
         public Task<Pokemon> GetByName(string name)
         {
-            return EFDbContext.Pokemons.FirstAsync(p => p.Name == name);
+            return EFDbContext.Pokemons.FirstOrDefaultAsync(p => p.Name == name);
         }
 
         public Task<bool> HasPokemon(Guid pokemonId)
@@ -45,7 +47,9 @@ namespace Pokedex.Infra.Repositories
 
         public async Task<IEnumerable<Pokemon>> Find(FindPokemonQuery query)
         {
-            var findQuery = EFDbContext.Pokemons.AsQueryable();
+            var findQuery = EFDbContext.Pokemons
+                .Include(p => p.Category)
+                .AsQueryable();
 
             if (query.HasName)
                 findQuery = findQuery.Where(p => p.Name.Contains(query.Name));

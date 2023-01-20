@@ -6,7 +6,7 @@ namespace Pokedex.Business.Repositories
 {
     public interface IPokemonRepository : IRepository
     {
-        public Task Add(Pokemon pokemon);
+        Task Add(Pokemon pokemon);
         public void Update(Pokemon pokemon);
         public void Delete(Guid pokemonId);
 

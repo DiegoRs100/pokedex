@@ -7,7 +7,7 @@ namespace Pokedex.Business.Entities
 {
     public class Pokemon : Entity
     {
-        public string Name { get; private set; }
+        public string Name { get; private set; } = default!;
         public Guid CategoryId { get; private set; }
         public Gender Gender { get; private set; }
 
@@ -17,6 +17,11 @@ namespace Pokedex.Business.Entities
         public int Speed { get; private set; }
 
         public Category Category { get; private set; } = default!;
+
+        private Pokemon()
+        { 
+            // Necessário para serialização.
+        }
 
         public Pokemon(string name, Guid categoryId, Gender gender, int hp, int attack, int defense, int speed)
         {

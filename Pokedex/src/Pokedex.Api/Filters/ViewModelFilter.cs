@@ -19,7 +19,8 @@ namespace Pokedex.Api.Filters
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
-            // Not implemented.
+            if(context.ActionArguments.Values.Any(a => a is Entity))
+                throw new InvalidOperationException("Domain entities cannot be received via REST. Please use a model type.");
         }
     }
 }

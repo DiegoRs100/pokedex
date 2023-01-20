@@ -10,7 +10,7 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace Pokedex.Api.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("pokedex")]
     public class PokedexController : ControllerBase
     {
@@ -38,7 +38,7 @@ namespace Pokedex.Api.Controllers
             return Created($"{HttpContext.Request.Path}/{pokemonId}", null);
         }
 
-        [HttpPut("{pokemonId:guid}")]
+        [HttpPut]
         [SwaggerOperation("Atualizar cadastro de pokémon.")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> UpdatePokemon([FromBody] PokemonModel model) 

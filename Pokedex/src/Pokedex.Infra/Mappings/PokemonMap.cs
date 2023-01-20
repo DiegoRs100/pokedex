@@ -8,7 +8,7 @@ namespace Pokedex.Infra.Mappings
     {
         public void Configure(EntityTypeBuilder<Pokemon> builder)
         {
-            builder.ToTable("POKEMONS");
+            builder.ToTable("POKEMON");
 
             builder.HasKey(p => p.Id);
 

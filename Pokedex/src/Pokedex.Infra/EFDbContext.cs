@@ -11,7 +11,7 @@ namespace Pokedex.Infra
 
         public DbSet<Pokemon> Pokemons { get; set; }
 
-        public EFDbContext(IHostingEnvironment enviroment)
+        public EFDbContext(DbContextOptions<EFDbContext> options, IHostingEnvironment enviroment) : base(options)
         {
             _enviroment = enviroment;
         }

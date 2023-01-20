@@ -13,6 +13,16 @@ namespace Pokedex.Business.Core
             Id = Guid.NewGuid();
         }
 
+        public void SetCreationDate(DateTime createdAt)
+        {
+            CreatedAt = createdAt;
+        }
+
+        public void SetUpdateDate(DateTime updatedAt)
+        {
+            UpdatedAt = updatedAt;
+        }
+
         public virtual ValidationResult Validate()
         {
             throw new NotImplementedException("Override the validate method with valid conditions.");

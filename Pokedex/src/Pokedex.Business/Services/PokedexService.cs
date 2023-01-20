@@ -72,8 +72,7 @@ namespace Pokedex.Business.Services
         public async Task DeletePokemon(Guid pokemonId)
         {
             var hasPokemon = await _pokemonRepository.HasPokemon(pokemonId);
-
-            
+                        
             if (!hasPokemon)
             {
                 _notifier.Notify("Não foi possível encontrar o pokémon informado.");

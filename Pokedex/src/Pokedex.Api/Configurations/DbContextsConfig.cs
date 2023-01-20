@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Pokedex.Infra;
+using Pokedex.Infra.Interceptors;
 
 namespace Pokedex.Api.Configurations
 {
@@ -7,8 +8,7 @@ namespace Pokedex.Api.Configurations
     {
         public static IServiceCollection AddDbContexts(this IServiceCollection services, IConfiguration configuration)
         {
-            var connectionName = configuration["SqlServer:PokedexDb"];
-            var connectionString = configuration.GetConnectionString(connectionName!);
+            var connectionString = configuration["SqlServer:PokedexDb"];
 
             services.AddDbContext<EFDbContext>(options =>
             {
@@ -16,6 +16,8 @@ namespace Pokedex.Api.Configurations
                 {
                     options.EnableRetryOnFailure(4, TimeSpan.FromSeconds(20), null);
                 });
+
+                options.AddInterceptors(new EfMetadataInterceptor());
             });
 
             services.AddScoped(_ => new DapperDbContext(connectionString!));
